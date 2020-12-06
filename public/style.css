@@ -1,0 +1,78 @@
+*{
+    font-family: 'montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    text-align: center;
+}
+#video-grid{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-auto-rows: 300px;
+    text-align: center; */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+video{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 5px;
+}
+.tooltip {
+position: relative;
+display: inline-block;
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 140px;
+background-color: #555;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px;
+position: absolute;
+z-index: 1;
+bottom: 150%;
+left: 50%;
+margin-left: -75px;
+opacity: 0;
+transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+opacity: 1;
+}
+
+input{  
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    background-color: #f5f5f5;
+}
+button{
+    border: none;
+    background-color: rgb(0, 212, 177);
+    color: #fff;
+    padding: 10px 20px;
+}
+button:hover{
+    background-color: rgb(0, 161, 135);
+
+}
